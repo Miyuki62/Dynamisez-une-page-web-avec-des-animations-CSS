@@ -1,7 +1,8 @@
-<html>
+<!DOCTYPE html>
+<html lang="fr">
 	<head>
 		<!-- appele de la police et des fichier css -->
-		<link rel="stylesheet" href="/public/css/styles.css" />
+		<link rel="stylesheet" href="public/css/styles.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -12,7 +13,7 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
 		/>
-		<meta <meta charset="utf-8" />
+		<meta charset="utf-8" />
 		<meta
 			name="viewport"
 			content="width=device-width, initial-scale=1.0, viewport-fit=cover"
@@ -26,9 +27,197 @@
 			</a>
 			<img src="public/img/logo/ohmyfood@2x.svg" alt="logo ohmyfood" />
 		</header>
+		<div class="menu">
+			<!-- menu -->
+			<div class="menu__bgimg">
+				<!-- image de fond -->
+				<img
+					src="public/img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+					alt=""
+				/>
+			</div>
+			<div class="menu__list">
+				<!-- list plat du menu flexbox -->
+				<div class="menu__text">
+					<!-- nom du restaurant -->
+					<h1>Le délice des sens</h1>
+					<i class="far fa-heart fiche-restaurants__fav"></i>
+					<!-- icone fav -->
+				</div>
+				<section class="menu__entrées">
+					<!-- menu entrée -->
+					<h3>ENTRÉES</h3>
+					<div class="menubtn">
+						<!-- un choix de plat -->
+						<div class="menubtn__text1">
+							<!-- titre du plat-->
+							<h4>Tartare de thon</h4>
+							<div class="menubtn__text2">
+								<!-- text du plat avec le prix-->
+								<p>Assaisonné au yuzu</p>
+								<p class="txtbold">25€</p>
+							</div>
+						</div>
+						<!-- checkbox pour le plat -->
+						<input
+							type="checkbox"
+							id="entrée1"
+							name="entrée1"
+							value="entrée1"
+						/>
+					</div>
+					<div class="menubtn">
+						<!-- un choix de plat -->
+						<div class="menubtn__text1">
+							<!-- titre du plat-->
+							<h4>Bouchée de homard croustillant</h4>
+							<div class="menubtn__text2">
+								<!-- text du plat avec le prix-->
+								<p>Et sa farandole de petits légumes</p>
+								<p class="txtbold">35€</p>
+							</div>
+						</div>
+						<!-- checkbox pour le plat -->
+						<input
+							type="checkbox"
+							id="entrée2"
+							name="entrée2"
+							value="entrée2"
+						/>
+					</div>
+					<div class="menubtn">
+						<!-- un choix de plat -->
+						<div class="menubtn__text1">
+							<!-- titre du plat-->
+							<h4>Velouté de cèpes</h4>
+							<div class="menubtn__text2">
+								<!-- text du plat avec le prix-->
+								<p>Aux truffes</p>
+								<p class="txtbold">20€</p>
+							</div>
+						</div>
+						<!-- checkbox pour le plat -->
+						<input
+							type="checkbox"
+							id="entrée3"
+							name="entrée3"
+							value="entrée3"
+						/>
+					</div>
+				</section>
+				<section class="menu__plats">
+					<!-- menu plats -->
+					<h3>PLATS</h3>
+					<div class="menubtn">
+						<!-- un choix de plat -->
+						<div class="menubtn__text1">
+							<!-- titre du plat-->
+							<h4>Poulet rôti aux herbes de Provence</h4>
+							<div class="menubtn__text2">
+								<!-- text du plat avec le prix-->
+								<p>Et sa crème de truffe</p>
+								<p class="txtbold">40€</p>
+							</div>
+						</div>
+						<!-- checkbox pour le plat -->
+						<input type="checkbox" id="plat1" name="plat1" value="plat1" />
+					</div>
+					<div class="menubtn">
+						<!-- un choix de plat -->
+						<div class="menubtn__text1">
+							<!-- titre du plat-->
+							<h4>Langouste rôtie</h4>
+							<div class="menubtn__text2">
+								<!-- text du plat avec le prix-->
+								<p>Et ses légumes de saison</p>
+								<p class="txtbold">35€</p>
+							</div>
+						</div>
+						<!-- checkbox pour le plat -->
+						<input type="checkbox" id="plat2" name="plat2" value="plat2" />
+					</div>
+					<div class="menubtn">
+						<!-- un choix de plat -->
+						<div class="menubtn__text1">
+							<!-- titre du plat-->
+							<h4>Côte de boeuf Angus</h4>
+							<div class="menubtn__text2">
+								<!-- text du plat avec le prix-->
+								<p>Et sa purée de panais</p>
+								<p class="txtbold">44€</p>
+							</div>
+						</div>
+						<!-- checkbox pour le plat -->
+						<input type="checkbox" id="plat3" name="plat3" value="plat3" />
+					</div>
+				</section>
+				<section class="menu__desserts">
+					<!-- menu plats -->
+					<h3>DESSERTS</h3>
+					<div class="menubtn">
+						<!-- un choix de plat -->
+						<div class="menubtn__text1">
+							<!-- titre du plat-->
+							<h4>Farandole de desserts</h4>
+							<div class="menubtn__text2">
+								<!-- text du plat avec le prix-->
+								<p>Du chef</p>
+								<p class="txtbold">18€</p>
+							</div>
+						</div>
+						<!-- checkbox pour le plat -->
+						<input
+							type="checkbox"
+							id="dessert1"
+							name="dessert1"
+							value="dessert1"
+						/>
+					</div>
+					<div class="menubtn">
+						<!-- un choix de plat -->
+						<div class="menubtn__text1">
+							<!-- titre du plat-->
+							<h4>Crème brulée</h4>
+							<div class="menubtn__text2">
+								<!-- text du plat avec le prix-->
+								<p>Revisitée</p>
+								<p class="txtbold">22€</p>
+							</div>
+						</div>
+						<!-- checkbox pour le plat -->
+						<input
+							type="checkbox"
+							id="dessert2"
+							name="dessert2"
+							value="dessert2"
+						/>
+					</div>
+					<div class="menubtn">
+						<!-- un choix de plat -->
+						<div class="menubtn__text1">
+							<!-- titre du plat-->
+							<h4>Tiramisu</h4>
+							<div class="menubtn__text2">
+								<!-- text du plat avec le prix-->
+								<p>À la noisette</p>
+								<p class="txtbold">23€</p>
+							</div>
+						</div>
+						<!-- checkbox pour le plat -->
+						<input
+							type="checkbox"
+							id="dessert3"
+							name="dessert3"
+							value="dessert3"
+						/>
+					</div>
+				</section>
+				<input class="btn__submit" type="submit" value="Commander" />
+			</div>
+		</div>
 		<footer>
 			<section>
-				<h1>ohmyfood</h1>
+				<h2>ohmyfood</h2>
 				<a class="lien__footer lien__footer--bold" href="#"
 					><i class="fas fa-utensils"></i>Proposer un restaurant</a
 				>
@@ -36,7 +225,7 @@
 					><i class="fas fa-handshake"></i>Devenir partenaire</a
 				>
 				<a class="lien__footer" href="#">Données et confidentialité</a>
-				<a class="lien__footer" href="mailto: ohmyfood@ohmyfood.com">Contact</a>
+				<a class="lien__footer" href="mailto:ohmyfood@ohmyfood.com">Contact</a>
 			</section>
 		</footer>
 	</body>
