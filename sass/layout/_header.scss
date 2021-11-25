@@ -1,0 +1,8 @@
+#logo {
+	@media (max-width: $bp-phone) {
+		height: auto;
+		width: auto;
+		padding-left: 30%;
+		padding-right: 80%;
+	}
+}

@@ -1,0 +1,107 @@
+/*font*/
+h1,
+h2 {
+  /*font pour les titre h1 police Ohmyfood*/
+  font-family: "Shrikhand", cursive;
+}
+
+h3,
+h4,
+p {
+  /*font pour le reste*/
+  font-family: "Roboto", sans-serif;
+}
+
+.txtbold {
+  font-weight: bold;
+}
+
+.btn {
+  width: 100%;
+  min-width: 50%;
+  font-size: 105%;
+  color: white;
+  background: linear-gradient(#ff79da, #9356dc);
+  height: 50px;
+  border-radius: 50px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  #logo {
+    height: auto;
+    width: auto;
+    padding-left: 30%;
+    padding-right: 80%;
+  }
+}
+
+@media (max-width: 767px) {
+  .body {
+    max-width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 767px) {
+  .recherche {
+    align-items: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .information {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .information__titre {
+    width: 60%;
+    font-size: 150%;
+    text-align: center;
+  }
+  .information__text {
+    width: 90%;
+    font-size: 110%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .fonctionnement {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 767px) {
+  .choix-restaurant {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .fiche-restaurants {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-content: center;
+  }
+  .fiche-restaurants__img img {
+    overflow: hidden;
+    width: 100%;
+    height: fit-content;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -2,7 +2,7 @@
 <html lang="fr">
 	<head>
 		<!-- appele de la police et des fichier css -->
-		<link rel="stylesheet" href="public/css/styles.css" />
+		<link rel="stylesheet" href="public/css/style.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -23,10 +23,14 @@
 	</head>
 	<body>
 		<header>
-			<img src="public/img/logo/ohmyfood@2x.svg" alt="logo ohmyfood" />
+			<img
+				id="logo"
+				src="public/img/logo/ohmyfood@2x.svg"
+				alt="logo ohmyfood"
+			/>
 		</header>
 		<nav>
-			<div>
+			<div id="recherche">
 				<i class="fas fa-map-marker-alt icon-recherche"></i>
 				<!-- zone de texte pour la recherche -->
 				<input
@@ -38,23 +42,27 @@
 			</div>
 		</nav>
 		<section class="information">
-			<h3 class="txtbold">Réservez le menu qui vous convient</h3>
-			<p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+			<h3 class="txtbold information__titre">
+				Réservez le menu qui vous convient
+			</h3>
+			<p class="information__text">
+				Découvrez des restaurants d'exception, séléctionnés par nos soins.
+			</p>
 			<button type="button" class="btn">Explorer nos restaurants</button>
 		</section>
 		<section class="fonctionnement">
 			<h3 class="txtbold">Fonctionnement</h3>
-			<article class="txtbold cadre__tuto">
+			<article class="txtbold fonctionnement__cadre-tuto">
 				<h4>Choisissez un restaurant</h4>
 			</article>
-			<article class="txtbold cadre__tuto">
+			<article class="txtbold fonctionnement__cadre-tuto">
 				<h4>Composez votre menu</h4>
 			</article>
-			<article class="txtbold cadre__tuto">
+			<article class="txtbold fonctionnement__cadre-tuto">
 				<h4>Dégustez au restaurant</h4>
 			</article>
 		</section>
-		<section class="restaurants">
+		<section class="choix-restaurants">
 			<!-- section pour les fiche restaurant -->
 			<div class="fiche-restaurants">
 				<!-- div pour une fiche restaurant -->

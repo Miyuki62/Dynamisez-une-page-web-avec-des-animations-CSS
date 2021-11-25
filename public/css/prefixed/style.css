@@ -1,0 +1,14 @@
+h1,
+h2 {
+  /*font pour les titre h1 police Ohmyfood*/
+  font-family: "Shrikhand", cursive;
+}
+
+h3,
+h4,
+p {
+  /*font pour le reste*/
+  font-family: "Roboto", sans-serif;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uLy4uL3Nhc3MvbWFpbi5zY3NzIiwiLi4vc3R5bGUuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUVBOztFQUVDLHlDQUFBO0VBQ0EsaUNBQUE7QUNERDs7QURHQTs7O0VBR0MscUJBQUE7RUFDQSxpQ0FBQTtBQ0FEIiwiZmlsZSI6InN0eWxlLmNzcyJ9 */
