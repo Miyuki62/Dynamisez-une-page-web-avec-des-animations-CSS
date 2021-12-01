@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
 /*font*/
 h1,
 h2 {
@@ -17,8 +19,7 @@ p {
 }
 
 .btn {
-  width: 100%;
-  min-width: 50%;
+  width: 217px;
   font-size: 105%;
   color: white;
   background: linear-gradient(#ff79da, #9356dc);
@@ -29,21 +30,77 @@ p {
   cursor: pointer;
 }
 
+.page-header {
+  height: 60px;
+}
+
 @media (max-width: 767px) {
   #logo {
-    height: auto;
-    width: auto;
-    padding-left: 30%;
-    padding-right: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
   }
+}
+
+.footer {
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  gap: 10px;
+  background-color: #353535;
+  color: white;
+}
+.footer > h2 {
+  font-size: 25px;
+}
+.footer > a {
+  outline: none;
+  text-decoration: none;
+  color: white;
+}
+.footer > a:hover {
+  cursor: pointer;
+}
+.footer__icon--1 {
+  display: flex;
+  padding-left: 5px;
+  justify-content: flex-start;
+  gap: 12px;
+}
+.footer__icon--2 {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+/* gestion de la zone de recherche*/
+#recherche {
+  width: 100%;
+  height: 50px;
+  background: #eaeaea;
+  display: inline-block;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.icon-recherche {
+  padding-top: 7px;
+  padding-right: 20px;
+}
+
+input[type=text] {
+  width: 140px;
+  outline: none;
+  border: none;
+  background: #eaeaea;
+  font-size: large;
 }
 
 @media (max-width: 767px) {
   .body {
-    max-width: 100%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
+    width: 100%;
   }
 }
 
@@ -56,6 +113,9 @@ p {
 @media (max-width: 767px) {
   .information {
     width: 100%;
+    height: 320px;
+    background: #f6f6f6;
+    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -74,33 +134,120 @@ p {
 
 @media (max-width: 767px) {
   .fonctionnement {
-    width: 100%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
+    min-width: 250px;
+    max-width: 90%;
+    height: 450px;
+    margin: auto;
+    padding-left: 10px;
   }
+}
+.fonctionnement__cadre-nombre p {
+  width: 25px;
+  height: 25px;
+  border: 1px solid #9356dc;
+  border-radius: 50%;
+  background: #9356dc;
+  text-align: center;
+  color: white;
+  position: relative;
+  bottom: -50px;
+  right: 10px;
+  z-index: 2;
+}
+.fonctionnement__cadre-text {
+  z-index: 1;
+  border: 1px solid #f6f6f6;
+  height: 80px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px #d9d9d9;
+  background: #f6f6f6;
+  display: flex;
+  flex-direction: row;
+  margin-top: -20px;
+}
+.fonctionnement__cadre-text > i {
+  padding-top: 30px;
+  padding-left: 15%;
+  color: grey;
+}
+.fonctionnement__cadre-text > h4 {
+  margin: auto;
+}
+.fonctionnement__cadre-text--rose {
+  background-color: #f5edff;
+}
+.fonctionnement__cadre-text--rose > i {
+  color: #9356dc;
 }
 
 @media (max-width: 767px) {
-  .choix-restaurant {
-    width: 90%;
+  .choix-restaurants {
+    width: 100%;
+    padding-bottom: 50px;
+    margin: auto;
     display: flex;
     flex-direction: column;
-    align-content: center;
+    background: #f6f6f6;
+  }
+  .choix-restaurants > h3 {
+    padding-left: 25px;
   }
 }
 
 @media (max-width: 767px) {
   .fiche-restaurants {
+    width: 90%;
+    height: 250px;
+    border: solid;
+    border-style: none;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 5px #d9d9d9;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    margin: auto;
     align-content: center;
+    margin-bottom: 20px;
   }
-  .fiche-restaurants__img img {
-    overflow: hidden;
+  .fiche-restaurants__txtimg img {
     width: 100%;
-    height: fit-content;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    height: 150px;
+    object-fit: cover;
+  }
+  .fiche-restaurants__txtimg {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  .fiche-restaurants__nouveau p {
+    width: 25%;
+    height: 25px;
+    position: absolute;
+    padding-top: 8px;
+    top: 0px;
+    right: 16px;
+    background: #99e2d0;
+    color: #0a8d6d;
+    border-radius: 2px;
+  }
+  .fiche-restaurants__nouveau--off {
+    display: none;
+  }
+  .fiche-restaurants__fav {
+    padding-left: 85%;
+    margin-top: -60px;
+  }
+  .fiche-restaurants__heading {
+    margin-bottom: -10px;
+    padding-left: 10px;
+  }
+  .fiche-restaurants__byline {
+    padding-left: 10px;
+  }
+  .fiche-restaurantsfiche-restaurants__flex2 {
+    display: flex;
+    flex-direction: column;
   }
 }
 

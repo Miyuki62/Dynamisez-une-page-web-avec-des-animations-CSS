@@ -2,3 +2,11 @@
 	display: flex;
 	flex-direction: column;
 }
+@mixin placement-page {
+	//gere le centrage de la page
+	margin: auto;
+}
+@mixin placement-texte {
+	//gere le placement du texte
+	padding-left: $padding-texte;
+}

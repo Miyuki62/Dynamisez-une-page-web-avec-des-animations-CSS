@@ -1,8 +1,11 @@
+.page-header {
+	height: 60px;
+}
 #logo {
 	@media (max-width: $bp-phone) {
-		height: auto;
-		width: auto;
-		padding-left: 30%;
-		padding-right: 80%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		padding-top: 15px;
 	}
 }

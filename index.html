@@ -1,18 +1,9 @@
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
-		<!-- appele de la police et des fichier css -->
+		<!-- appele des fichier css -->
 		<link rel="stylesheet" href="public/css/style.css" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap"
-			rel="stylesheet"
-		/>
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-		/>
+		<link rel="stylesheet" href="public/css/normalize.css" />
 		<!-- viewport pour le responsive -->
 		<meta charset="utf-8" />
 		<meta
@@ -22,7 +13,7 @@
 		<title>Ohmyfood</title>
 	</head>
 	<body>
-		<header>
+		<header class="page-header">
 			<img
 				id="logo"
 				src="public/img/logo/ohmyfood@2x.svg"
@@ -34,8 +25,9 @@
 				<i class="fas fa-map-marker-alt icon-recherche"></i>
 				<!-- zone de texte pour la recherche -->
 				<input
+					class="txtbold"
 					type="text"
-					placeholder="Paris,Belleville"
+					placeholder="Paris, Belleville"
 					id="maRecherche"
 					name="q"
 				/>
@@ -53,136 +45,157 @@
 		<section class="fonctionnement">
 			<h3 class="txtbold">Fonctionnement</h3>
 			<article class="txtbold fonctionnement__cadre-tuto">
-				<h4>Choisissez un restaurant</h4>
+				<div class="fonctionnement__cadre-nombre"><p>1</p></div>
+				<div class="fonctionnement__cadre-text">
+					<i class="fas fa-mobile-alt"></i>
+					<h4>Choisissez un restaurant</h4>
+				</div>
 			</article>
 			<article class="txtbold fonctionnement__cadre-tuto">
-				<h4>Composez votre menu</h4>
+				<div class="fonctionnement__cadre-nombre"><p>2</p></div>
+				<div class="fonctionnement__cadre-text">
+					<i class="fas fa-list"></i>
+					<h4>Composez votre menu</h4>
+				</div>
 			</article>
 			<article class="txtbold fonctionnement__cadre-tuto">
-				<h4>Dégustez au restaurant</h4>
+				<div class="fonctionnement__cadre-nombre"><p>3</p></div>
+				<div class="fonctionnement__cadre-text fonctionnement__cadre-text--rose">
+					<i class="fas fa-store"></i>
+					<h4>Dégustez au restaurant</h4>
+				</div>
 			</article>
 		</section>
 		<section class="choix-restaurants">
+			<h3>Restaurant</h3>
 			<!-- section pour les fiche restaurant -->
 			<div class="fiche-restaurants">
 				<!-- div pour une fiche restaurant -->
 				<a href="la_palette_du_gout.html">
 					<!-- integration du lien pour la fiche restaurant sur toute la fiche -->
-					<div class="fiche-restaurants__imgandtxt">
+					<div class="fiche-restaurants__txtimg">
 						<!-- div qui gere l'image et le texte nouveau -->
-						<div class="fiche-restaurants__img">
-							<img
-								src="public/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-								alt=""
-							/>
-						</div>
+						<img
+							src="public/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+							alt=""
+						/>
 						<!-- l'image du restaurant -->
-						<div class="fiche-restaurants__nouveau"><p>Nouveau</p></div>
+						<div class="fiche-restaurants__nouveau txtbold">
+							<p>Nouveau</p>
+						</div>
 						<!-- texte "nouveau" au dessus de l'image du restaurant -->
 					</div>
 					<div class="fiche-restaurants__flex1">
 						<!-- div pour mettre une flexbox pour les texte et l'icone -->
 						<div class="fiche-restaurants__flex2">
 							<!-- div pour mettre une flexbox pour le placement des texte -->
-							<div class="fiche-restaurants__heading bold">
+							<div class="fiche-restaurants__heading txtbold">
 								<h4>La palette du goût</h4>
 							</div>
 							<!-- titre du restaurant -->
 							<div class="fiche-restaurants__byline"><p>Ménilmontant</p></div>
 							<!-- quartier du restaurant -->
 						</div>
+						</a>
 						<div class="fiche-restaurants__fav">
-							<i class="far fa-heart"></i>
+							<i class="far fa-heart fa-2x"></i>
 						</div>
 					</div>
-				</a>
 			</div>
 			<div class="fiche-restaurants">
 				<!-- div pour une fiche restaurant -->
 				<a href="la_note_enchantée.html">
 					<!-- integration du lien pour la fiche restaurant sur toute la fiche -->
-					<div class="fiche-restaurants__imgandtxt">
+					<div class="fiche-restaurants__txtimg">
 						<!-- div qui gere l'image et le texte nouveau -->
-						<div class="fiche-restaurants__img">
-							<img
-								src="public/img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
-								alt=""
-							/>
-						</div>
+						<img
+							src="public/img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+							alt=""
+						/>
 						<!-- l'image du restaurant -->
-						<div class="fiche-restaurants__nouveau"><p>Nouveau</p></div>
+						<div class="fiche-restaurants__nouveau txtbold"><p>Nouveau</p></div>
 						<!-- texte "nouveau" au dessus de l'image du restaurant -->
 					</div>
 					<div class="fiche-restaurants__flex1">
 						<div class="fiche-restaurants__flex2">
 							<!-- div pour mettre une flexbox pour le placement des texte -->
-							<div class="fiche-restaurants__heading bold">
+							<div class="fiche-restaurants__heading txtbold">
 								<h4>La note enchantée</h4>
 							</div>
 							<!-- titre du restaurant -->
 							<div class="fiche-restaurants__byline"><p>Charonne</p></div>
 							<!-- quartier du restaurant -->
 						</div>
+						</a>
 						<div class="fiche-restaurants__fav">
-							<i class="far fa-heart"></i>
+							<i class="far fa-heart fa-2x"></i>
 						</div>
 					</div>
-				</a>
 			</div>
 			<div class="fiche-restaurants">
 				<!-- div pour une fiche restaurant -->
 				<a href="a_la_française.html">
 					<!-- integration du lien pour la fiche restaurant sur toute la fiche -->
-					<div class="fiche-restaurants__imgandtxt">
+					<div class="fiche-restaurants__txtimg">
 						<!-- div qui gere l'image et le texte nouveau -->
-						<div class="fiche-restaurants__img">
-							<img
-								src="public/img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-								alt=""
-							/>
-						</div>
+						<img
+							src="public/img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+							alt=""
+						/>
 						<!-- l'image du restaurant -->
-						<div class="fiche-restaurants__nouveau"></div>
+						<div
+							class="
+								fiche-restaurants__nouveau fiche-restaurants__nouveau--off
+								txtbold
+							"
+						>
+							nouveau
+						</div>
 						<!-- texte "nouveau" au dessus de l'image du restaurant -->
 					</div>
 					<div class="fiche-restaurants__flex1">
 						<!-- div pour mettre une flexbox pour les texte et l'icone -->
 						<div class="fiche-restaurants__flex2">
 							<!-- div pour mettre une flexbox pour le placement des texte -->
-							<div class="fiche-restaurants__heading bold">
+							<div class="fiche-restaurants__heading txtbold">
 								<h4>À la française</h4>
 							</div>
 							<!-- titre du restaurant -->
 							<div class="fiche-restaurants__byline"><p>Cité Rouge</p></div>
 							<!-- quartier du restaurant -->
 						</div>
+						</a>
 						<div class="fiche-restaurants__fav">
-							<i class="far fa-heart"></i>
+							<i class="far fa-heart fa-2x"></i>
 						</div>
 					</div>
-				</a>
 			</div>
 			<div class="fiche-restaurants">
 				<!-- div pour une fiche restaurant -->
 				<a href="le_delice_des_sens.html">
 					<!-- integration du lien pour la fiche restaurant sur toute la fiche -->
-					<div class="fiche-restaurants__imgandtxt">
+					<div class="fiche-restaurants__txtimg">
 						<!-- div qui gere l'image et le texte nouveau -->
-						<div class="fiche-restaurants__img">
-							<img
-								src="public/img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-								alt=""
-							/>
-						</div>
+						<img
+							src="public/img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+							alt=""
+						/>
 						<!-- l'image du restaurant -->
-						<div class="fiche-restaurants__nouveau"></div>
+						<div
+							class="
+								fiche-restaurants__nouveau fiche-restaurants__nouveau--off
+								txtbold
+							"
+						>
+							nouveau
+						</div>
 						<!-- texte "nouveau" au dessus de l'image du restaurant -->
 					</div>
 					<div class="fiche-restaurants__flex1">
 						<!-- div pour mettre une flexbox pour les texte et l'icone -->
 						<div class="fiche-restaurants__flex2">
 							<!-- div pour mettre une flexbox pour le placement des texte -->
-							<div class="fiche-restaurants__heading bold">
+							<div class="fiche-restaurants__heading txtbold">
 								<h4>Le délice des sens</h4>
 							</div>
 							<!-- titre du restaurant -->
@@ -191,25 +204,26 @@
 							</div>
 							<!-- quartier du restaurant -->
 						</div>
+						</a>
 						<div class="fiche-restaurants__fav">
-							<i class="far fa-heart"></i>
+							<i class="far fa-heart fa-2x"></i>
 						</div>
 					</div>
-				</a>
+				
 			</div>
 		</section>
 		<footer>
 			<!-- footer -->
-			<section>
-				<h1>ohmyfood</h1>
-				<a class="lien__footer lien__footer--bold" href="#"
+			<section class="footer">
+				<h2>ohmyfood</h2>
+				<a class="footer__icon--1 txtbold" href="#"
 					><i class="fas fa-utensils"></i>Proposer un restaurant</a
 				>
-				<a class="lien__footer lien__footer--bold" href="#"
+				<a class="footer__icon--2 txtbold" href="#"
 					><i class="fas fa-handshake"></i>Devenir partenaire</a
 				>
-				<a class="lien__footer" href="#">Données et confidentialité</a>
-				<a class="lien__footer" href="mailto:ohmyfood@ohmyfood.com">Contact</a>
+				<a href="#">Données et confidentialité</a>
+				<a href="mailto:ohmyfood@ohmyfood.com">Contact</a>
 				<!-- lien pour envoyer un mail -->
 			</section>
 		</footer>
