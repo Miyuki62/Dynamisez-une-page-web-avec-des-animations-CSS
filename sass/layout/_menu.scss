@@ -1,0 +1,52 @@
+.menu {
+	@media (max-width: $bp-phone) {
+		&__bgimg img {
+			width: 100%;
+			height: 300px;
+			object-fit: cover;
+		}
+		&__list {
+			position: relative;
+			top: -60px;
+			padding-bottom: 50px;
+			margin-bottom: -60px;
+			border-top-left-radius: 40px;
+			border-top-right-radius: 40px;
+			background: $color-bg-info-restaurant;
+			@include placement-texte;
+		}
+		&__placement {
+			@include flex-column;
+			@include placement-page;
+		}
+		&__text {
+			padding-top: 30px;
+		}
+		&__entrées {
+			@include flex-column;
+			@include fiche-menu;
+			& > h3 {
+				@include menu-underline;
+			}
+		}
+		&__plats {
+			@include flex-column;
+			@include fiche-menu;
+			& > h3 {
+				@include menu-underline;
+			}
+		}
+		&__desserts {
+			@include flex-column;
+			@include fiche-menu;
+			& > h3 {
+				@include menu-underline;
+			}
+		}
+		.placement-btn {
+			display: flex;
+			justify-content: center;
+			margin-top: 50px;
+		}
+	}
+}

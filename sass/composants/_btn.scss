@@ -1,11 +1,30 @@
 .btn {
-	width: 217px;
-	font-size: 105%;
-	color: white;
-	background: linear-gradient($color-secondary, $color-primary);
-	height: 50px;
-	border-radius: 50px;
-	text-align: center;
-	border: none;
-	cursor: pointer;
+	@include btn;
+	&__submit {
+		@include btn;
+	}
+}
+
+.menubtn {
+	@include flex-column;
+	@include radius-shadow;
+	text-align: start;
+	padding-left: 10px;
+	min-width: 270px;
+	max-width: 767px;
+	width: 98%;
+	background: white;
+	&__text h4 {
+		margin-top: 10px;
+		margin-bottom: -10px;
+	}
+	&__text {
+		width: 100%;
+	}
+	&__prix {
+		display: flex;
+		white-space: nowrap;
+		gap: 80px;
+		color: grey;
+	}
 }

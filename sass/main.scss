@@ -1,3 +1,6 @@
+.body {
+	width: 100%;
+}
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap"); //police
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"); //font-awesome
 
@@ -5,7 +8,9 @@
 @import "./utils/mixin";
 @import "./base/font";
 @import "./base/bold";
+@import "./base/truncate";
 @import "./composants/btn";
+@import "./composants/animation";
 @import "./layout/header";
 @import "./layout/footer";
 @import "./layout/menu";

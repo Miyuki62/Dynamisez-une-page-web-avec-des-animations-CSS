@@ -10,3 +10,28 @@
 	//gere le placement du texte
 	padding-left: $padding-texte;
 }
+@mixin fiche-menu {
+	height: auto;
+	gap: 20px;
+}
+@mixin radius-shadow {
+	border-radius: 20px;
+	border-style: none;
+	box-shadow: 5px 5px 10px #d9d9d9;
+}
+@mixin menu-underline {
+	width: 50px;
+	padding-bottom: 10px;
+	border-bottom: 4px $color-tertiary solid;
+}
+@mixin btn {
+	width: 217px;
+	font-size: 105%;
+	color: white;
+	background: linear-gradient($color-secondary, $color-primary);
+	height: 50px;
+	border-radius: 50px;
+	text-align: center;
+	border: none;
+	cursor: pointer;
+}

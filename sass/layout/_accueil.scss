@@ -1,8 +1,3 @@
-.body {
-	@media (max-width: $bp-phone) {
-		width: 100%;
-	}
-}
 .recherche {
 	@media (max-width: $bp-phone) {
 		align-items: center;
@@ -95,8 +90,7 @@
 		height: 250px;
 		border: solid;
 		border-style: none;
-		border-radius: 20px;
-		box-shadow: 5px 5px 5px 5px #d9d9d9;
+		@include radius-shadow;
 		@include flex-column;
 		@include placement-page;
 		align-content: center;

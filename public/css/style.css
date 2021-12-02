@@ -1,5 +1,10 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+.body {
+  width: 100%;
+}
+
 /*font*/
 h1,
 h2 {
@@ -16,6 +21,16 @@ p {
 
 .txtbold {
   font-weight: bold;
+  color: black;
+}
+
+.truncate {
+  min-width: 150px;
+  max-width: 600px;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .btn {
@@ -29,17 +44,70 @@ p {
   border: none;
   cursor: pointer;
 }
+.btn__submit {
+  width: 217px;
+  font-size: 105%;
+  color: white;
+  background: linear-gradient(#ff79da, #9356dc);
+  height: 50px;
+  border-radius: 50px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+
+.menubtn {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  border-style: none;
+  box-shadow: 5px 5px 10px #d9d9d9;
+  text-align: start;
+  padding-left: 10px;
+  min-width: 270px;
+  max-width: 767px;
+  width: 98%;
+  background: white;
+}
+.menubtn__text h4 {
+  margin-top: 10px;
+  margin-bottom: -10px;
+}
+.menubtn__text {
+  width: 100%;
+}
+.menubtn__prix {
+  display: flex;
+  white-space: nowrap;
+  gap: 80px;
+  color: grey;
+}
 
 .page-header {
-  height: 60px;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.lien__header {
+  position: relative;
+  bottom: -25px;
+  padding-left: 40px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color: grey;
 }
 
 @media (max-width: 767px) {
-  #logo {
+  .logo {
     display: block;
     margin-left: auto;
     margin-right: auto;
     padding-top: 15px;
+  }
+  .logo-menu {
+    padding-top: 0px;
   }
 }
 
@@ -47,7 +115,7 @@ p {
   padding-bottom: 30px;
   display: flex;
   flex-direction: column;
-  padding-left: 10px;
+  padding-left: 20px;
   gap: 10px;
   background-color: #353535;
   color: white;
@@ -75,6 +143,70 @@ p {
   gap: 10px;
 }
 
+@media (max-width: 767px) {
+  .menu__bgimg img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  .menu__list {
+    position: relative;
+    top: -60px;
+    padding-bottom: 50px;
+    margin-bottom: -60px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    background: #f6f6f6;
+    padding-left: 20px;
+  }
+  .menu__placement {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  .menu__text {
+    padding-top: 30px;
+  }
+  .menu__entrées {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    gap: 20px;
+  }
+  .menu__entrées > h3 {
+    width: 50px;
+    padding-bottom: 10px;
+    border-bottom: 4px #99e2d0 solid;
+  }
+  .menu__plats {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    gap: 20px;
+  }
+  .menu__plats > h3 {
+    width: 50px;
+    padding-bottom: 10px;
+    border-bottom: 4px #99e2d0 solid;
+  }
+  .menu__desserts {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    gap: 20px;
+  }
+  .menu__desserts > h3 {
+    width: 50px;
+    padding-bottom: 10px;
+    border-bottom: 4px #99e2d0 solid;
+  }
+  .menu .placement-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+}
+
 /* gestion de la zone de recherche*/
 #recherche {
   width: 100%;
@@ -96,12 +228,6 @@ input[type=text] {
   border: none;
   background: #eaeaea;
   font-size: large;
-}
-
-@media (max-width: 767px) {
-  .body {
-    width: 100%;
-  }
 }
 
 @media (max-width: 767px) {
@@ -138,7 +264,7 @@ input[type=text] {
     max-width: 90%;
     height: 450px;
     margin: auto;
-    padding-left: 10px;
+    padding-left: 20px;
   }
 }
 .fonctionnement__cadre-nombre p {
@@ -201,7 +327,8 @@ input[type=text] {
     border: solid;
     border-style: none;
     border-radius: 20px;
-    box-shadow: 5px 5px 5px 5px #d9d9d9;
+    border-style: none;
+    box-shadow: 5px 5px 10px #d9d9d9;
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -240,10 +367,10 @@ input[type=text] {
   }
   .fiche-restaurants__heading {
     margin-bottom: -10px;
-    padding-left: 10px;
+    padding-left: 20px;
   }
   .fiche-restaurants__byline {
-    padding-left: 10px;
+    padding-left: 20px;
   }
   .fiche-restaurantsfiche-restaurants__flex2 {
     display: flex;
