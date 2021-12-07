@@ -90,6 +90,7 @@
 		height: 250px;
 		border: solid;
 		border-style: none;
+		background-color: white;
 		@include radius-shadow;
 		@include flex-column;
 		@include placement-page;
