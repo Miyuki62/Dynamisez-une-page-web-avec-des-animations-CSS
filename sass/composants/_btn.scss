@@ -12,7 +12,7 @@
 	padding-left: 10px;
 	min-width: 270px;
 	max-width: 767px;
-	width: 98%;
+	width: 95%;
 	background: white;
 	&__text h4 {
 		margin-top: 10px;
@@ -23,6 +23,7 @@
 	}
 	&__prix {
 		display: flex;
+		padding-right: 10px;
 		white-space: nowrap;
 		gap: 80px;
 		color: grey;

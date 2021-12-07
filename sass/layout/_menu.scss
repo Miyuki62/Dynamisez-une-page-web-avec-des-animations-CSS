@@ -21,6 +21,14 @@
 		}
 		&__text {
 			padding-top: 30px;
+			font-size: small;
+			display: flex;
+			width: 100%;
+		}
+		&__fav {
+			margin-top: 10px;
+			margin-right: 10px;
+			margin-left: auto;
 		}
 		&__entrées {
 			@include flex-column;

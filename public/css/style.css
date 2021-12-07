@@ -66,7 +66,7 @@ p {
   padding-left: 10px;
   min-width: 270px;
   max-width: 767px;
-  width: 98%;
+  width: 95%;
   background: white;
 }
 .menubtn__text h4 {
@@ -78,6 +78,7 @@ p {
 }
 .menubtn__prix {
   display: flex;
+  padding-right: 10px;
   white-space: nowrap;
   gap: 80px;
   color: grey;
@@ -166,6 +167,14 @@ p {
   }
   .menu__text {
     padding-top: 30px;
+    font-size: small;
+    display: flex;
+    width: 100%;
+  }
+  .menu__fav {
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: auto;
   }
   .menu__entrées {
     display: flex;
