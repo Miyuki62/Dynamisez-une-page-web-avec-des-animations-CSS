@@ -6,17 +6,22 @@
 }
 
 .menubtn {
+	cursor: pointer;
 	@include flex-column;
 	@include radius-shadow;
 	text-align: start;
 	padding-left: 10px;
+	height: 70px;
 	min-width: 270px;
-	max-width: 767px;
+	max-width: 980px;
 	width: 95%;
 	background: white;
-	&__text h4 {
-		margin-top: 10px;
-		margin-bottom: -10px;
+
+	.titre {
+		display: block;
+		padding-top: 10px;
+		font-weight: bolder;
+		font-size: large;
 	}
 	&__text {
 		width: 100%;
@@ -27,5 +32,6 @@
 		white-space: nowrap;
 		gap: 80px;
 		color: grey;
+		padding-top: 5px;
 	}
 }
