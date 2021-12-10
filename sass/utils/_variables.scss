@@ -6,11 +6,12 @@ $color-font-nouveau: #0a8d6d;
 $color-nav: #eaeaea;
 $color-bg-info-restaurant: #f6f6f6;
 $color-footer: #353535;
+$color-btn: linear-gradient($color-secondary, $color-primary);
 
 //variable media querry//
 $bp-pc: 992px;
-$bp-tablet: 768px;
-$bp-phone: 767px;
+$bp-tablet: 991px;
+$bp-phone: 991px;
 
 //padding texte//
 $padding-texte: 20px;
