@@ -16,7 +16,9 @@
 	max-width: 980px;
 	width: 95%;
 	background: white;
-
+	@media (min-width: $bp-pc) {
+		width: 500px;
+	}
 	.titre {
 		display: block;
 		padding-top: 10px;

@@ -1,19 +1,9 @@
 .truncate {
 	//fonction qui sert a rogner le texte si il est trop grand
-	@media (max-width: $bp-pc) {
-		min-width: 150px;
-		max-width: 600px;
-		width: 100%;
-		overflow: hidden;
-		white-space: nowrap;
-		text-overflow: ellipsis;
-	}
-	@media (max-width: $bp-phone) {
-		min-width: 150px;
-		max-width: 900px;
-		width: 100%;
-		overflow: hidden;
-		white-space: nowrap;
-		text-overflow: ellipsis;
-	}
+	min-width: 150px;
+	max-width: 900px;
+	width: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
 }
