@@ -13,14 +13,12 @@
 	color: grey;
 }
 .logo {
-	@media (max-width: $bp-phone) {
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-		padding-top: 15px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 15px;
 
-		&-menu {
-			padding-top: 0px;
-		}
+	&-menu {
+		padding-top: 0px;
 	}
 }

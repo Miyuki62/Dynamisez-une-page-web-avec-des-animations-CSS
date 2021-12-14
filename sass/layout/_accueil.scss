@@ -5,33 +5,33 @@
 }
 
 .information {
-	@media (max-width: $bp-phone) {
-		width: 100%;
-		height: 100%;
-		padding-bottom: 50px;
-		background: $color-bg-info-restaurant;
-		@include placement-page;
-		@include flex-column;
-		align-items: center;
-		&__titre {
-			width: 60%;
-			font-size: 150%;
-			text-align: center;
-		}
-		&__text {
-			width: 90%;
-			font-size: 110%;
-			text-align: center;
-		}
+	width: 100%;
+	height: 100%;
+	padding-bottom: 50px;
+	background: $color-bg-info-restaurant;
+	@include placement-page;
+	@include flex-column;
+	align-items: center;
+	&__titre {
+		width: 60%;
+		font-size: 150%;
+		text-align: center;
+	}
+	&__text {
+		width: 90%;
+		font-size: 110%;
+		text-align: center;
 	}
 }
 .fonctionnement {
-	@media (max-width: $bp-phone) {
-		min-width: 250px;
-		max-width: 90%;
-		height: 450px;
-		@include placement-page;
-		@include placement-texte;
+	min-width: 250px;
+	max-width: 600px;
+	width: 90%;
+	height: 450px;
+	@include placement-page;
+	@include placement-texte;
+	@media (min-width: $bp-pc) {
+		width: 46%;
 	}
 
 	&__cadre-nombre p {
@@ -74,68 +74,80 @@
 	}
 }
 .choix-restaurants {
-	@media (max-width: $bp-phone) {
-		width: 100%;
-		padding-bottom: 50px; //gere l'espace entre le footer et la derniere fiche
-		@include placement-page;
-		@include flex-column;
-		background: $color-bg-info-restaurant;
-		& > h3 {
-			padding-left: 25px;
+	width: 100%;
+	padding-bottom: 50px; //gere l'espace entre le footer et la derniere fiche
+	@include placement-page;
+	background: $color-bg-info-restaurant;
+	& > h3 {
+		padding-left: 25px;
+		@media (min-width: $bp-pc) {
+			padding-top: 20px;
 		}
+	}
+	@media (max-width: $bp-phone) {
+		@include flex-column;
+	}
+}
+.placement-fiche {
+	@media (min-width: $bp-pc) {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		gap: 20px;
 	}
 }
 .fiche-restaurants {
-	@media (max-width: $bp-phone) {
-		width: 90%;
-		height: 250px;
-		border: solid;
-		border-style: none;
-		background-color: white;
-		@include radius-shadow;
+	width: 90%;
+	height: 250px;
+	border: solid;
+	border-style: none;
+	background-color: white;
+	@include radius-shadow;
+	@include flex-column;
+	@include placement-page;
+	align-content: center;
+	margin-bottom: 20px;
+	@media (min-width: $bp-pc) {
+		width: 46%;
+	}
+	&__txtimg img {
+		width: 100%;
+		border-top-right-radius: 15px;
+		border-top-left-radius: 15px;
+		height: 150px;
+		object-fit: cover;
+	}
+	&__txtimg {
+		position: relative;
+		text-align: center;
+		color: white;
+	}
+	&__nouveau p {
+		width: 25%;
+		height: 25px;
+		position: absolute;
+		padding-top: 8px;
+		top: 0px;
+		right: 16px;
+		background: $color-tertiary;
+		color: $color-font-nouveau;
+		border-radius: 2px;
+	}
+	&__nouveau--off {
+		display: none;
+	}
+	&__fav {
+		padding-left: 85%;
+		margin-top: -60px;
+	}
+	&__heading {
+		margin-bottom: -10px;
+		@include placement-texte;
+	}
+	&__byline {
+		@include placement-texte;
+	}
+	&fiche-restaurants__flex2 {
 		@include flex-column;
-		@include placement-page;
-		align-content: center;
-		margin-bottom: 20px;
-		&__txtimg img {
-			width: 100%;
-			border-top-right-radius: 15px;
-			border-top-left-radius: 15px;
-			height: 150px;
-			object-fit: cover;
-		}
-		&__txtimg {
-			position: relative;
-			text-align: center;
-			color: white;
-		}
-		&__nouveau p {
-			width: 25%;
-			height: 25px;
-			position: absolute;
-			padding-top: 8px;
-			top: 0px;
-			right: 16px;
-			background: $color-tertiary;
-			color: $color-font-nouveau;
-			border-radius: 2px;
-		}
-		&__nouveau--off {
-			display: none;
-		}
-		&__fav {
-			padding-left: 85%;
-			margin-top: -60px;
-		}
-		&__heading {
-			margin-bottom: -10px;
-			@include placement-texte;
-		}
-		&__byline {
-			@include placement-texte;
-		}
-		&fiche-restaurants__flex2 {
-			@include flex-column;
-		}
 	}
 }
