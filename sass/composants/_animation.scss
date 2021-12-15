@@ -13,7 +13,7 @@
 }
 .fa-heart {
 	position: relative;
-	color: white;
+	color: transparent;
 	-webkit-text-stroke: 1px black;
 	top: -30px;
 	transition: all ease-in-out;
@@ -60,9 +60,9 @@
 	overflow: hidden;
 }
 .effect.effect-2 {
-	transition: all 0.2s linear 0s;
+	transition: all 0.3s linear 0s;
 
-	&:before {
+	&:after {
 		content: "\f058";
 		font-family: "Font Awesome 5 Free";
 		font-weight: 900;
@@ -75,16 +75,17 @@
 		right: -60px;
 		width: 60px;
 		height: 100%;
-		background-color: $color-font-nouveau;
-		transition: all 0.2s linear 0s;
+		transition: all 0.3s linear 0s;
 		text-align: center;
 	}
 
 	&:hover {
 		padding-right: 60px;
-		&:before {
+		&:after {
 			right: 0;
 			padding-right: 0px;
+			transform: rotate(1turn);
+			background-color: $color-font-nouveau;
 		}
 	}
 }

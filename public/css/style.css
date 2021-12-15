@@ -27,7 +27,6 @@ p {
 
 .truncate {
   min-width: 150px;
-  max-width: 900px;
   width: 100%;
   overflow: hidden;
   white-space: nowrap;
@@ -88,9 +87,7 @@ p {
 }
 .menubtn__prix {
   display: flex;
-  padding-right: 10px;
   white-space: nowrap;
-  gap: 80px;
   color: grey;
   padding-top: 5px;
 }
@@ -110,7 +107,7 @@ p {
 
 .fa-heart {
   position: relative;
-  color: white;
+  color: transparent;
   -webkit-text-stroke: 1px black;
   top: -30px;
   transition: all ease-in-out;
@@ -156,9 +153,9 @@ p {
 }
 
 .effect.effect-2 {
-  transition: all 0.2s linear 0s;
+  transition: all 0.3s linear 0s;
 }
-.effect.effect-2:before {
+.effect.effect-2:after {
   content: "\f058";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -171,16 +168,17 @@ p {
   right: -60px;
   width: 60px;
   height: 100%;
-  background-color: #0a8d6d;
-  transition: all 0.2s linear 0s;
+  transition: all 0.3s linear 0s;
   text-align: center;
 }
 .effect.effect-2:hover {
   padding-right: 60px;
 }
-.effect.effect-2:hover:before {
+.effect.effect-2:hover:after {
   right: 0;
   padding-right: 0px;
+  transform: rotate(1turn);
+  background-color: #0a8d6d;
 }
 
 .page-header {
