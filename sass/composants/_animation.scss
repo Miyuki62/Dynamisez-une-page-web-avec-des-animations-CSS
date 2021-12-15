@@ -53,10 +53,9 @@
 
 //animation selection plat//
 .effect {
-	display: inline-block;
+	display: inline-flex;
 	position: relative;
 	text-decoration: none;
-	border-radius: 10px;
 	overflow: hidden;
 }
 .effect.effect-2 {
@@ -76,6 +75,7 @@
 		width: 60px;
 		height: 100%;
 		transition: all 0.3s linear 0s;
+		background-color: $color-font-nouveau;
 		text-align: center;
 	}
 
@@ -85,7 +85,6 @@
 			right: 0;
 			padding-right: 0px;
 			transform: rotate(1turn);
-			background-color: $color-font-nouveau;
 		}
 	}
 }

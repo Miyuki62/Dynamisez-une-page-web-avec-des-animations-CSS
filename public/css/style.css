@@ -82,12 +82,16 @@ p {
   font-weight: bolder;
   font-size: large;
 }
+.menubtn .prix {
+  padding-right: 10px;
+}
 .menubtn__text {
   width: 100%;
 }
 .menubtn__prix {
   display: flex;
   white-space: nowrap;
+  width: 100%;
   color: grey;
   padding-top: 5px;
 }
@@ -145,10 +149,9 @@ p {
   }
 }
 .effect {
-  display: inline-block;
+  display: inline-flex;
   position: relative;
   text-decoration: none;
-  border-radius: 10px;
   overflow: hidden;
 }
 
@@ -169,6 +172,7 @@ p {
   width: 60px;
   height: 100%;
   transition: all 0.3s linear 0s;
+  background-color: #0a8d6d;
   text-align: center;
 }
 .effect.effect-2:hover {
@@ -178,7 +182,6 @@ p {
   right: 0;
   padding-right: 0px;
   transform: rotate(1turn);
-  background-color: #0a8d6d;
 }
 
 .page-header {
