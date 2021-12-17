@@ -12,6 +12,7 @@
 }
 @mixin fiche-menu {
 	height: auto;
+	margin-bottom: 10px;
 	gap: 20px;
 }
 @mixin radius-shadow {
@@ -34,4 +35,7 @@
 	text-align: center;
 	border: none;
 	cursor: pointer;
+}
+@mixin menu-loading {
+	animation: 0.5s linear forwards spinner;
 }
