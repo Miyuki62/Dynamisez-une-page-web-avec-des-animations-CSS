@@ -1,10 +1,13 @@
+//gere les page menu//
 .menu {
 	&__bgimg img {
+		//gere l'image de fond//
 		width: 100%;
 		height: 300px;
 		object-fit: cover;
 	}
 	&__list {
+		//gere le placement du menu entier//
 		position: relative;
 		top: -60px;
 		padding-bottom: 50px;
@@ -15,10 +18,12 @@
 		@include placement-texte;
 	}
 	&__placement {
+		//gere le placement du des liste//
 		@include flex-column;
 		@include placement-page;
 	}
 	.placement-list {
+		//gere le placement des liste pour la version pc//
 		@media (min-width: $bp-pc) {
 			display: flex;
 			flex-wrap: wrap;
@@ -26,17 +31,20 @@
 		}
 	}
 	&__text {
+		//gere le texte qui a le nom du restaurant//
 		padding-top: 30px;
 		font-size: small;
 		display: flex;
 		width: 100%;
 	}
 	&__fav {
+		//gere le coeur pour favori//
 		margin-top: 10px;
 		margin-right: 20px;
 		margin-left: auto;
 	}
 	&__entrées {
+		//gere la partie entrées//
 		@include flex-column;
 		@include fiche-menu;
 		& > h3 {
@@ -44,6 +52,7 @@
 		}
 	}
 	&__plats {
+		//gere la partie plat//
 		@include flex-column;
 		@include fiche-menu;
 		& > h3 {
@@ -51,6 +60,7 @@
 		}
 	}
 	&__desserts {
+		//gere la partie desserts//
 		@include flex-column;
 		@include fiche-menu;
 		& > h3 {
@@ -58,6 +68,7 @@
 		}
 	}
 	.placement-btn {
+		//gere le placement du btn//
 		display: flex;
 		justify-content: center;
 		margin-top: 50px;

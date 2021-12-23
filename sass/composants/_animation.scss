@@ -54,6 +54,7 @@
 
 //animation selection plat//
 .effect {
+	//gere la selection du plat//
 	display: inline-flex;
 	position: relative;
 	text-decoration: none;
@@ -63,6 +64,7 @@
 	transition: all 0.3s linear 0s;
 
 	&:after {
+		//ajoute l'icone et le background avec le statue par default//
 		content: "\f058";
 		font-family: "Font Awesome 5 Free";
 		font-weight: 900;
@@ -82,6 +84,7 @@
 	}
 
 	&:hover {
+		//changement quand on hover sur un btn//
 		padding-right: 60px;
 		&:after {
 			right: -10px;
@@ -97,6 +100,7 @@
 	opacity: 0;
 }
 .menu {
+	//gere l'arrivée des section a la suite dans les menu //
 	&__entrées {
 		@include menu-loading;
 		animation-delay: 0.5s;
@@ -121,6 +125,7 @@
 }
 //animation loading index//
 .hidden {
+	//gere la pseudo invisibilité de la page durant le spinner//
 	visibility: hidden;
 	opacity: 0;
 	animation: 0.5s linear forwards hidden;
@@ -141,6 +146,7 @@
 }
 
 .spinner {
+	//gere le spinner de la page index quand on arrive//
 	height: 100px;
 	width: 100px;
 	color: $color-secondary;

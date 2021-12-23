@@ -1,10 +1,10 @@
 .recherche {
-	@media (max-width: $bp-phone) {
-		align-items: center;
-	}
+	//gere le placement du text de recherche//
+	align-items: center;
 }
 
 .information {
+	//gere la partie en dessous de la recherche avec le btn//
 	width: 100%;
 	height: 100%;
 	padding-bottom: 50px;
@@ -24,6 +24,7 @@
 	}
 }
 .fonctionnement {
+	//gere la partie explication du site//
 	min-width: 250px;
 	max-width: 600px;
 	width: 90%;
@@ -74,8 +75,9 @@
 	}
 }
 .choix-restaurants {
+	//gere la partie choix du restaurants//
 	width: 100%;
-	padding-bottom: 50px; //gere l'espace entre le footer et la derniere fiche
+	padding-bottom: 50px; //gere l'espace entre le footer et la derniere fiche//
 	@include placement-page;
 	background: $color-bg-info-restaurant;
 	& > h3 {
@@ -89,6 +91,7 @@
 	}
 }
 .placement-fiche {
+	//gere le placement des fiche des restaurants pour pc//
 	@media (min-width: $bp-pc) {
 		display: flex;
 		flex-wrap: wrap;
@@ -97,6 +100,7 @@
 	}
 }
 .fiche-restaurants {
+	//gere les fiche des restaurants//
 	width: 90%;
 	height: 250px;
 	border: solid;

@@ -1,31 +1,36 @@
 @mixin flex-column {
+	//flex-column//
 	display: flex;
 	flex-direction: column;
 }
 @mixin placement-page {
-	//gere le centrage de la page
+	//gere le centrage de la page//
 	margin: auto;
 }
 @mixin placement-texte {
-	//gere le placement du texte
+	//gere le placement du texte//
 	padding-left: $padding-texte;
 }
 @mixin fiche-menu {
+	//gere les fiche des menu//
 	height: auto;
 	margin-bottom: 10px;
 	gap: 20px;
 }
 @mixin radius-shadow {
+	//gere les ombre//
 	border-radius: 20px;
 	border-style: none;
 	box-shadow: 5px 5px 10px #d9d9d9;
 }
 @mixin menu-underline {
+	//gere la ligne en dessous de plat entrée dessert sur les menu//
 	width: 50px;
 	padding-bottom: 10px;
 	border-bottom: 4px $color-tertiary solid;
 }
 @mixin btn {
+	//un bouton//
 	width: 217px;
 	font-size: 105%;
 	color: white;
@@ -37,5 +42,6 @@
 	cursor: pointer;
 }
 @mixin menu-loading {
+	//animation apparition des menu//
 	animation: 0.5s linear forwards spinner;
 }

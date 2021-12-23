@@ -1,4 +1,5 @@
 .btn {
+	//gere les btn de validation//
 	@include btn;
 	&__submit {
 		@include btn;
@@ -6,6 +7,7 @@
 }
 
 .menubtn {
+	//gere les btn qui compose les menu//
 	cursor: pointer;
 	@include flex-column;
 	@include radius-shadow;
