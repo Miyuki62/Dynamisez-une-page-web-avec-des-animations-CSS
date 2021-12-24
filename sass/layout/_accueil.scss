@@ -114,6 +114,10 @@
 	@media (min-width: $bp-pc) {
 		width: 46%;
 	}
+	& a {
+		text-decoration: none;
+		color: inherit;
+	}
 	&__txtimg img {
 		width: 100%;
 		border-top-right-radius: 15px;
