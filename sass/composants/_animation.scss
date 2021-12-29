@@ -64,7 +64,34 @@
 	transition: all 0.3s linear 0s;
 
 	&:after {
-		//ajoute l'icone et le background avec le statue par default//
+		//ajoute le background avec le statue par default//
+		content: "";
+		color: white;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		top: 0;
+		right: -60px;
+		width: 60px;
+		height: 100%;
+		transition: all 0.3s linear 0s;
+		background-color: $color-tertiary;
+		text-align: center;
+	}
+
+	&:hover {
+		//changement quand on hover sur un btn//
+		padding-right: 60px;
+		&:after {
+			right: 0px;
+			padding-right: 0px;
+		}
+	}
+}
+.effect-2.effect-3 {
+	&:before {
+		//ajoute l'icone avec le statue par default//
 		content: "\f058";
 		font-family: "Font Awesome 5 Free";
 		font-weight: 900;
@@ -74,21 +101,25 @@
 		justify-content: center;
 		position: absolute;
 		top: 0;
-		right: -70px;
-		width: 70px;
+		right: -60px;
+		width: 60px;
 		height: 100%;
 		transition: all 0.3s linear 0s;
-		background-color: $color-font-nouveau;
 		text-align: center;
-		border-radius: 50%;
+		z-index: 1;
 	}
-
 	&:hover {
 		//changement quand on hover sur un btn//
 		padding-right: 60px;
-		&:after {
-			right: -10px;
+		&:before {
+			right: 0px;
 			padding-right: 0px;
+		}
+	}
+}
+.effect-3 {
+	&:hover {
+		&:before {
 			transform: rotate(1turn);
 		}
 	}
